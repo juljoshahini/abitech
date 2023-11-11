@@ -2315,7 +2315,7 @@ header.simpl {
       font-size: 10px; }
 
 .page-header .cont {
-  padding: 220px 0 50px; }
+  padding: 120px 0 50px; }
   .page-header .cont h6 {
     color: #ccc;
     font-weight: 400;
@@ -2378,7 +2378,7 @@ header.simpl {
         margin-right: 0; }
 
 .page-header.proj-det .img-wrapper {
-  min-height: 80vh; }
+  min-height: 100vh; }
 
 .works-header {
   min-height: 80vh; }

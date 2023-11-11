@@ -332,6 +332,7 @@ $(function () {
     pageSection.each(function (indx) {
 
         if ($(this).attr("data-background")) {
+                console.log( $(this).data("background"))
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });

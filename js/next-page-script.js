@@ -2,6 +2,7 @@
 const projectDetails = [
     { name: 'Project 1', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
     { name: 'Project 2', link: 'ith.html', imageUrl: '../img/portfolio/social-media/ith/1.jpg' },
+    { name: 'Project 2', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
     // Add more projects as needed
 ];
 
