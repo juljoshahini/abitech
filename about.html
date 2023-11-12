@@ -35,6 +35,31 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <style>
+        /* Default styles for both mobile and desktop */
+        .mobile-hidden {
+            display: block; /* Display on desktop by default */
+        }
+        
+        .desktop-hidden {
+            display: block; /* Display on mobile by default */
+        }
+
+        /* Media query to hide elements on mobile */
+        @media only screen and (max-width: 991px) {
+            .mobile-hidden {
+                display: none; /* Hide on mobile */
+            }
+        }
+
+        /* Media query to hide elements on desktop */
+        @media only screen and (min-width: 991px) {
+            .desktop-hidden {
+                display: none; /* Hide on desktop */
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -176,15 +201,13 @@
 
     <!-- ==================== Start Slider ==================== -->
 
-    <header class="pages-header bg-img valign parallaxie" data-background="img/slid/1.jpg" data-overlay-dark="5">
+    <header class="pages-header bg-img valign parallaxie" data-background="img/golden-wheat-barley-fields-sunrise-generated-by-ai.jpg" data-overlay-dark="5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="cont text-center">
-                        <h1>About Us</h1>
-                        <div class="path">
-                            <a href="index.html">Home</a><span>/</span><a href="about.html" class="active">About Us</a>
-                        </div>
+                        <h1 class="mobile-hidden">Crafting Tomorrow's <br>Vision Today.</h1>
+                        <h2 class="desktop-hidden">Crafting Tomorrow's Vision Today.</h2>
                     </div>
                 </div>
             </div>
@@ -267,7 +290,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="img">
-                        <img class="thumparallax-down" src="img/min-area.jpg" alt="">
+                        <img class="thumparallax-down" src="img/pexels-ylanite-koppens-697662.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 valign">
@@ -302,7 +325,7 @@
 
     <!-- ==================== Start clients Brands ==================== -->
 
-    <section class="clients section-padding-bottom">
+    <section class="clients section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 valign">
