@@ -1,8 +1,9 @@
 // Assuming you have an array of project details
 const projectDetails = [
-    { name: 'Project 1', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
-    { name: 'Project 2', link: 'ith.html', imageUrl: '../img/portfolio/social-media/ith/1.jpg' },
-    { name: 'Project 2', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
+    { name: 'Ozone', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
+    { name: 'ITH', link: 'ith.html', imageUrl: '../img/portfolio/social-media/Ith/1.jpg' },
+    { name: 'Wellness', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
+    { name: 'La Griffe', link: 'la-griffe.html', imageUrl: '../img/portfolio/branding/Lagriffe/14.jpg' },
     // Add more projects as needed
 ];
 
@@ -27,7 +28,7 @@ const nextProjectSection = document.getElementById('nextProjectSection');
 const nextProjectLink = document.getElementById('nextProjectLink');
 const nextProjectBgImg = document.getElementById('nextProjectBgImg');
 const projectName = document.getElementById('nextProjectCopyCap').querySelector('span');
-
+console.log('Next Project:', nextProjectSection, nextProjectLink, nextProjectBgImg, projectName);
 // Set the link and image source
 nextProjectLink.href = projectDetails[0].link;
 nextProjectBgImg.setAttribute('data-background', projectDetails[0].imageUrl);
