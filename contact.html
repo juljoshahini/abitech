@@ -28,6 +28,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
     <!-- Plugins -->
     <link rel="stylesheet" href="css/plugins.css" />
@@ -211,7 +213,7 @@
 
                             <h4 class="extra-title mb-50">Get In Touch.</h4>
 
-                            <form id="contact-form" method="post" action="contact.php">
+                            <form id="contactForm">
 
                                 <div class="messages"></div>
 
@@ -278,7 +280,7 @@
 
         <!-- ==================== Start Map ==================== -->
 
-        <div class="map" id="ieatmaps"></div>
+        <!-- <div class="map" id="ieatmaps"></div> -->
 
         <!-- ==================== End Map ==================== -->
 
@@ -304,7 +306,46 @@
 
 
 
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDdBq_yjdFvph0fM02jVh3_O-MZlzQViLs",
+            authDomain: "abitech-7d26d.firebaseapp.com",
+            databaseURL: "https://abitech-7d26d-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "abitech-7d26d",
+            storageBucket: "abitech-7d26d.appspot.com",
+            messagingSenderId: "912772211433",
+            appId: "1:912772211433:web:d800f8c62d0ce631288678",
+            measurementId: "G-G8JMCKRZTT"
+        };
 
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Initialize Firestore
+        var db = firebase.firestore();
+
+        var contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get form data
+            var formData = {
+                name: document.getElementById('form_name').value,
+                email: document.getElementById('form_email').value,
+                message: document.getElementById('form_message').value,
+            };
+
+            // Add data to Firestore
+            db.collection('contacts').add(formData)
+                .then(function (docRef) {
+                    contactForm.reset();
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+        });
+    </script>
     <!-- jQuery -->
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
