@@ -1,9 +1,10 @@
 // Assuming you have an array of project details
 const projectDetails = [
-    { name: 'Ozone', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
-    { name: 'ITH', link: 'ith.html', imageUrl: '../img/portfolio/social-media/Ith/1.jpg' },
-    { name: 'Wellness', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
-    { name: 'La Griffe', link: 'la-griffe.html', imageUrl: '../img/portfolio/branding/Lagriffe/14.jpg' },
+    { name: 'NEXT PROJECT', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
+    { name: 'NEXT PROJECT', link: 'ith.html', imageUrl: '../img/portfolio/social-media/Ith/1.jpg' },
+    { name: 'NEXT PROJECT', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
+    { name: 'NEXT PROJECT', link: 'la-griffe.html', imageUrl: '../img/portfolio/branding/Lagriffe/14.jpg' },
+    { name: 'NEXT PROJECT', link: 'valore-celeste.html', imageUrl: '../img/portfolio/branding/Valore/valore6.png' },
     // Add more projects as needed
 ];
 
