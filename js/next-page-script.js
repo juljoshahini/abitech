@@ -14,7 +14,7 @@ function getCurrentPageName() {
 
 // Remove the current page from projectDetails
 const currentPage = getCurrentPageName();
-const indexToRemove = projectDetails.findIndex(project => project.link === currentPage);
+const indexToRemove = projectDetails.findIndex(project => project.link.includes(currentPage));
 
 if (indexToRemove !== -1) {
     projectDetails.splice(indexToRemove, 1);
