@@ -1,6 +1,6 @@
 // Assuming you have an array of project details
 const projectDetails = [
-    { name: 'NEXT PROJECT', link: 'ith.html', imageUrl: '../img/portfolio/social-media/Ith/ith-social-media.png' },
+    { name: 'NEXT PROJECT', link: 'ith.html', imageUrl: '../img/portfolio/social-media/ith/ith-social-media.png' },
     { name: 'NEXT PROJECT', link: 'ozone.html', imageUrl: '../img/portfolio/social-media/ozone/1.jpg'},
     { name: 'NEXT PROJECT', link: 'wellness.html', imageUrl: '../img/portfolio/branding/wellness/main.png' },
     { name: 'NEXT PROJECT', link: 'la-griffe.html', imageUrl: '../img/portfolio/branding/Lagriffe/14.jpg' },
