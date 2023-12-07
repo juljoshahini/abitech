@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/abibsocv/abitech.al
+    - /bin/cp -r * $DEPLOYPATH
